@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <TrendingDown className="w-4 h-4 text-accent" />
             <span className="text-sm font-medium text-primary-foreground">
-              India's Lowest Interest Rates Starting @ 8.35% p.a.
+              India's Lowest Interest Rates Starting @ 7.30% p.a.
             </span>
           </div>
 
