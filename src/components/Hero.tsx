@@ -63,7 +63,7 @@ const Hero = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: "0.6s" }}>
             {[
-              { icon: BadgePercent, value: "8.35%", label: "Starting Rate" },
+              { icon: BadgePercent, value: "7.30%", label: "Starting Rate" },
               { icon: Clock, value: "24 Hrs", label: "Quick Approval" },
               { icon: Shield, value: "100%", label: "Secure Process" },
               // { value: "50K+", label: "Happy Customers" },
