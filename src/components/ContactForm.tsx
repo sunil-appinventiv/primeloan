@@ -117,7 +117,7 @@ const ContactForm = () => {
                      </div>
                   </div>
 
-                  <div className="flex items-start gap-4">
+                  {/* <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary-foreground/20 rounded-xl flex items-center justify-center shrink-0">
                       <MapPin className="w-5 h-5" />
                     </div>
@@ -126,7 +126,7 @@ const ContactForm = () => {
                       <p className="font-semibold">123 Financial Hub,</p>
                       <p className="font-semibold">Chandigarh, India 160102</p>
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary-foreground/20 rounded-xl flex items-center justify-center shrink-0">
