@@ -62,7 +62,7 @@ const Footer = () => {
               India's most trusted mortgage partner offering the lowest interest rates 
               on all types of property loans.
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
                 <a
                   key={index}
@@ -72,7 +72,7 @@ const Footer = () => {
                   <Icon className="w-5 h-5" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -92,22 +92,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company Links */}
-          <div>
-            <h4 className="font-heading font-bold text-lg mb-6">Company</h4>
-            <ul className="space-y-3">
-              {companyLinks.map((link, index) => (
-                <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-primary-foreground/70 hover:text-gold transition-colors"
-                  >
-                    {link.name}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
+         
 
           {/* Contact Info */}
           <div>
@@ -116,24 +101,22 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <div className="text-primary-foreground/70">
-                  <p>+91 123 456 7890</p>
-                  <p>+91 987 654 3210</p>
+                  <p>+91 872 790 2141</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <div className="text-primary-foreground/70">
-                  <p>info@primeloan.com</p>
-                  <p>loans@primeloan.com</p>
+                  <p>omverma763@gmail.com</p>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
                 <p className="text-primary-foreground/70">
                   123 Financial Hub,<br />
-                  Mumbai, India 400001
+                  Chandigarh, India 160102
                 </p>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
