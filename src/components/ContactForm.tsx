@@ -45,16 +45,29 @@ const ContactForm = () => {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+  const handleChange = (field: string, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbx8thBtJkuGRDYKVf-GF7xOfftHWehqRTocko-0aYFVzxDgfmp0XfbdSlOAiR9Czx_vqw/exec", {
+      method: "POST",
+      mode: "no-cors", // IMPORTANT
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
     toast({
-      title: "Application Submitted Successfully!",
-      description: "Our team will contact you within 24 hours.",
+      title: "Submitted Successfully!",
+      description: "Data saved to Google Sheets ✅",
     });
 
     setFormData({
@@ -65,12 +78,16 @@ const ContactForm = () => {
       loanAmount: "",
       message: "",
     });
-    setIsSubmitting(false);
-  };
 
-  const handleChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-  };
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Something went wrong ❌",
+    });
+  }
+
+  setIsSubmitting(false);
+};
 
   return (
     <section id="contact" className="py-24 bg-secondary/50">
