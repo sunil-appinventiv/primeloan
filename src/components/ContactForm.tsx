@@ -130,7 +130,7 @@ const ContactForm = () => {
                     </div>
                     <div>
                       <p className="text-sm text-primary-foreground/70 mb-1">Email Us</p>
-                      <p className="font-semibold">omverma763@gmail.com</p>
+                      <p className="font-semibold">vermaom8727@gmail.com</p>
                      </div>
                   </div>
 
