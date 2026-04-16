@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             <div>
               <span className="text-xl font-heading font-bold text-foreground">
-                Prime<span className="text-accent">Loan</span>
+                EasyCapital<span className="text-accent">Loan</span>
               </span>
               <p className="text-xs text-muted-foreground -mt-1">Lowest Rates Guaranteed</p>
             </div>
