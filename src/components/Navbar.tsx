@@ -25,7 +25,6 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-md border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
           <a href="#home" className="flex items-center gap-3 group">
             <div className="w-12 h-12 bg-hero-gradient rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
               <Building2 className="w-7 h-7 text-primary-foreground" />
@@ -38,7 +37,6 @@ const Navbar = () => {
             </div>
           </a>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <button
@@ -52,7 +50,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
             <a href="tel:+918727902141" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
@@ -63,7 +60,6 @@ const Navbar = () => {
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="lg:hidden p-2 text-foreground"
             onClick={() => setIsOpen(!isOpen)}
@@ -72,7 +68,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isOpen && (
           <div className="lg:hidden py-4 border-t border-border animate-slide-up">
             <div className="flex flex-col gap-2">

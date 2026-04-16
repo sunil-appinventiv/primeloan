@@ -1,12 +1,7 @@
 import { 
-  BadgePercent, 
-  Clock, 
-  Shield, 
-  HeadphonesIcon, 
-  FileCheck, 
-  Users,
-  CheckCircle2
+  BadgePercent, Clock, Shield, HeadphonesIcon, FileCheck, Users, CheckCircle2
 } from "lucide-react";
+import homeHandNature from "@/assets/home-hand-nature.jpg";
 
 const features = [
   {
@@ -57,23 +52,33 @@ const stats = [
 const WhyChooseUs = () => {
   return (
     <section id="why-us" className="py-24 bg-background relative overflow-hidden">
-      {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-            Why Choose Us
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-            Your Trusted <span className="text-primary">Loan Partner</span>
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            We're committed to making your loan journey smooth, transparent, and rewarding. 
-            Here's what sets us apart.
-          </p>
+        {/* Section Header with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <span className="inline-block text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              Why Choose Us
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
+              Your Trusted <span className="text-primary">Loan Partner</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              We're committed to making your loan journey smooth, transparent, and rewarding. 
+              Here's what sets us apart.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <div className="rounded-3xl overflow-hidden shadow-card-hover">
+              <img 
+                src={homeHandNature} 
+                alt="Your dream home in safe hands" 
+                className="w-full h-72 object-cover"
+              />
+            </div>
+          </div>
         </div>
 
         {/* Features Grid */}
@@ -84,7 +89,7 @@ const WhyChooseUs = () => {
               className="group p-8 bg-card rounded-2xl border border-border shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1"
             >
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                <feature.icon className="w-7 h-7 text-white" />
+                <feature.icon className="w-7 h-7 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-heading font-bold text-foreground mb-3">
                 {feature.title}

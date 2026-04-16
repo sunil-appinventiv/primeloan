@@ -1,8 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import LoanTypes from "@/components/LoanTypes";
+import PropertyShowcase from "@/components/PropertyShowcase";
+import LoanAgainstProperty from "@/components/LoanAgainstProperty";
+import BalanceTransfer from "@/components/BalanceTransfer";
 import CommercialLoans from "@/components/CommercialLoans";
-import PartnerBanks from "@/components/PartnerBanks";
 import EMICalculator from "@/components/EMICalculator";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CTASection from "@/components/CTASection";
@@ -15,11 +17,13 @@ const Index = () => {
       <Navbar />
       <Hero />
       <LoanTypes />
+      <PropertyShowcase />
+      <LoanAgainstProperty />
+      <BalanceTransfer />
       <CommercialLoans />
-      {/* <PartnerBanks /> */}
       <EMICalculator />
       <WhyChooseUs />
-      {/* <CTASection /> */}
+      <CTASection />
       <ContactForm />
       <Footer />
     </div>
