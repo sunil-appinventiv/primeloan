@@ -53,7 +53,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="text-xl font-heading font-bold">
-                  Prime<span className="text-gold">Loan</span>
+                  EasyCapital<span className="text-gold">Loan</span>
                 </span>
                 <p className="text-xs text-primary-foreground/60">Lowest Rates Guaranteed</p>
               </div>
@@ -125,7 +125,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-primary-foreground/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © 2024 PrimeLoan. All rights reserved.
+              © 2024 EasyCapitalLoan. All rights reserved.
             </p>
             {/* <p className="text-sm text-primary-foreground/60">
               Made with ❤️ in India | Regulated by RBI
